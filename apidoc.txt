@@ -1,0 +1,79 @@
+Authentication
+
+Schema:User
+
+Attributes:[username,email,password]
+
+1) Api for registering user account
+
+    url:http://127.0.0.1:8000/api/register/
+
+    method:POST
+
+    body:{username,email,password}
+
+======================================================================================
+
+schema:Income
+
+Attributes:[title,amount,category,created_date]
+
+
+1)api for listing  all incomes
+
+    url:http://127.0.0.1:8000/api/incomes/
+
+    method:GET
+
+    body:nill
+
+    authrization:{username,password}  BasicAuthentication
+
+2)api for adding incomes
+
+    url:http://127.0.0.1:8000/api/incomes/
+
+    method:POST
+
+    body:{title,amount,category,created_date }
+
+    authrization:BasicAuthentication
+
+3)api for updating income
+
+    url:http://127.0.0.1:8000/api/incomes/{id}/
+
+    method:PUT
+
+    body:{title,amount,category}
+
+    authrization:BasicAuthentication
+    
+
+4)api for fetching an income detail
+
+    url:http://127.0.0.1:8000/api/incomes/{id}/
+
+    method:GET
+
+    body:nill
+
+    authrization:BasicAuthentication
+
+
+5)api for delete an income
+
+    url:http://127.0.0.1:8000/api/incomes/{id}/
+
+    method:delete
+
+
+
+
+
+
+
+
+
+
+
